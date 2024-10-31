@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Picture Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cat Picture Gallery</h1>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search for cat type...">
+            <select id="filter-select">
+                <option value="all">All Cats</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="text">Caption a cat picture!</option>
+            </select>
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <!-- Cat images will be loaded here dynamically -->
+    </section>
+
+    <section id="mood-board" style="display: none;">
+        <h2>Your Favorite Cats</h2>
+        <div id="mood-board-items"></div>
+    </section>
+
+    <div id="lightbox" style="display: none;">
+        <span id="close-lightbox">X</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
